@@ -22,7 +22,6 @@ const questions = [
             A: "yes, I have one",
             B: "no"
         }
-       
 	},
     {
         problem: "3) Can you count how many apples?",
@@ -30,7 +29,6 @@ const questions = [
             A: "yes, there are 5 apples",
             B: "no"
         }
-        
 	},
     {
         problem: "4) do you like building towers?",
@@ -38,7 +36,6 @@ const questions = [
             A: "yes",
             B: "no"
         }
-        
 	}
 ];
 
@@ -78,11 +75,11 @@ for (let i = 0; i < images.length; i++) {
 	    if (questions[i].answer == "yes, I have one") {
                 counterT++;
             }
-	    if (questions[i].answer == "yes, there are 5 apples") {
-                counterM++;
-            } 
             if (questions[i].answer == "yes") {
                 counterE++;
+            } 
+	    if (questions[i].answer == "yes, there are 5 apples") {
+                counterM++;
             } 
             
             console.log(counterS);
