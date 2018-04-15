@@ -1,4 +1,81 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
-    font-family: sans-serif;
+body {
+    
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: #aae6f0;
+}
+.main_nav ul {
+    list-style: none;
+    background-color: rgb(255, 80, 80);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.main_nav li {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+}
+
+.main_nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main_nav a:hover {
+    background-color: rgb(255, 0, 80);
+}
+
+.main_nav li {
+    display: inline-block;
+}
+
+button {
+    max-width: 200px;
+    height: 30px;
+    border-color: #A0A4B8;
+    color: darkslategray;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background: #D8DDEF;
+    color: darkslategray;
+}
+
+#submit {
+    width: 150px;
+    height: 30px;
+    margin: 30px 250px;
+    border-color: #A0A4B8;
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+#results {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.stem {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 45fr 1fr;
+        grid-gap: 0px;
+        grid-template-areas: "img1 img2 img3 img4" ;
+        background: white;
+    }
+#quiz{
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
