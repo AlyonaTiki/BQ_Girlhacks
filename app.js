@@ -23,7 +23,7 @@ const questions = [
             A: "yes, I have one",
             B: "no"
         },
-	answer: "yea, I have one"
+	answer: "yes, I have one"
 	},
     {
         problem: "3) Can you count how many apples?",
@@ -31,7 +31,7 @@ const questions = [
             A: "yes, there are 5 apples",
             B: "no"
         },
-	answer: "yep, I count 5"
+	answer: "yes, there are 5 apples"
 	},
     {
         problem: "4) do you like building towers?",
@@ -39,7 +39,7 @@ const questions = [
             A: "yes",
             B: "no"
 	},
-	answer: "si"
+	answer: "yes"
 	}
 ];
 
@@ -73,10 +73,11 @@ for (let i = 0; i < images.length; i++) {
 
         options.onclick = function () {
             options.disabled = true;
-            if (options.disabled = true) {
+	    answer = 
+            if (questions[i].answer == "yes, I do") {
                 counterS++;
             }
-	    if (options.disabled = true) {
+	    if (questions[i].answer == "yes, I have one") {
                 counterT++;
             }
             if (questions[i].answer == "yes") {
