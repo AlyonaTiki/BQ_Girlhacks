@@ -109,7 +109,7 @@ submitButton.onclick = function () {
     var M = '';
 	
     if (counterS >= 1) {
-     	S = ' You are interested in Science, try our S game';
+     	S = ' You are interested in Science, try our S game \n';
     }  
     if (counterT >= 1) {
         T = ' You are a tech future, try our T game';
