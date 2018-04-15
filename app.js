@@ -73,16 +73,16 @@ for (let i = 0; i < images.length; i++) {
 
         options.onclick = function () {
             options.disabled = true;
-            if (questions[i].answer == "yes, I do") {
+            if (questions[i].option == "yes, I do") {
                 counterS++;
             }
-	    if (questions[i].answer == "yes, I have one") {
+	    if (questions[i].option == "yes, I have one") {
                 counterT++;
             }
-            if (questions[i].answer == "yes") {
+            if (questions[i].option == "yes") {
                 counterE++;
             } 
-	    if (questions[i].answer == "yes, there are 5 apples") {
+	    if (questions[i].option == "yes, there are 5 apples") {
                 counterM++;
             }
             
