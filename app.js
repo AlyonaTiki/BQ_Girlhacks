@@ -75,14 +75,14 @@ for (let i = 0; i < images.length; i++) {
             options.disabled = true;
             if (questions[i].answer == "yes,I do") {
                 counterS++;
-            } else if
-                (questions[i].answer == "yes, I have one") {
+            }
+	    if (questions[i].answer == "yes, I have one") {
                 counterT++;
-            } else if
-                (questions[i].answer == "yes, there are 5 apples") {
+            }
+	    if (questions[i].answer == "yes, there are 5 apples") {
                 counterE++;
-            } else if
-                (questions[i].answer == "yes") {
+            } 
+            if (questions[i].answer == "yes") {
                 counterM++;
             } 
             
@@ -103,13 +103,22 @@ var resultsContainer = document.getElementById('results');
 
 // on submit, show results
 submitButton.onclick = function () {
+    var S = ' ';
+    var T = ' ';
+    var E = ' ';
+    var M = ' ';
+	
     if (counterS >= 1) {
-        resultsContainer.innerHTML = ' You are interested in Science, try our S game';
-    } else if (counterT >= 1) {
-        resultsContainer.innerHTML = ' You are a tech future, try our T game';
-    } else if (counterE >= 1) {
-        resultsContainer.innerHTML = ' Engineering might be interesting for you, try our Circuit game';
-    } else if (counterM >= 1) {
-        resultsContainer.innerHTML = ' You are math profi, try our M game';
+     	S = ' You are interested in Science, try our S game<br />';
+    }  
+    if (counterT >= 1) {
+        T = ' You are a tech future, try our T game<br />';
     }
+    if (counterE >= 1) {
+        E = ' Engineering might be interesting for you, try our Circuit game<br />';
+    }
+    if (counterM >= 1) {
+        M = ' You are math profi, try our M game<br />';
+    }
+    resultsContainer.innerHTML = S + T + E + M;
 }
