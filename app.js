@@ -73,7 +73,6 @@ for (let i = 0; i < images.length; i++) {
 
         options.onclick = function () {
             options.disabled = true;
-	    answer = 
             if (questions[i].answer == "yes, I do") {
                 counterS++;
             }
