@@ -75,16 +75,16 @@ for (let i = 0; i < images.length; i++) {
             options.disabled = true;
             if (questions[i].answer == "yes, I do") {
                 counterS++;
-            }
+            };
 	    if (questions[i].answer == "yes, I have one") {
                 counterT++;
-            }
+            };
             if (questions[i].answer == "yes") {
                 counterE++;
-            } 
+            }; 
 	    if (questions[i].answer == "yes, there are 5 apples") {
                 counterM++;
-            } 
+            }; 
             
             console.log(counterS);
             console.log(counterT);
