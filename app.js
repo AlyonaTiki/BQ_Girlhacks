@@ -123,5 +123,5 @@ submitButton.onclick = function () {
         M = " You are math profi, try our M game<br />";
 	    resultsContainer.innerHTML = S + T + E + M;
     }
-    
+    resultsContainer.innerHTML = S + T + E + M;
 }
