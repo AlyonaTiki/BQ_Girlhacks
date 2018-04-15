@@ -18,7 +18,7 @@ const questions = [
        answer: "yes,I do"
 	},
     {
-        problem: "2) do you like to play puzzle game?",
+        problem: "2) do you like to play puzzle games?",
         option: {
             A: "yes, I have one",
             B: "no"
@@ -80,10 +80,10 @@ for (let i = 0; i < images.length; i++) {
                 counterT++;
             }
 	    if (questions[i].answer == "yes, there are 5 apples") {
-                counterE++;
+                counterM++;
             } 
             if (questions[i].answer == "yes") {
-                counterM++;
+                counterE++;
             } 
             
             console.log(counterS);
