@@ -103,16 +103,16 @@ var resultsContainer = document.getElementById('results');
 
 // on submit, show results
 submitButton.onclick = function () {
-    var S = '';
-    var T = '';
-    var E = '';
-    var M = '';
+    var S = ' ';
+    var T = ' ';
+    var E = ' ';
+    var M = ' ';
 	
     if (counterS >= 1) {
-     	S = ' You are interested in Science, try our S game \n';
+     	S = ' You are interested in Science, try our S game<br>';
     }  
     if (counterT >= 1) {
-        T = ' You are a tech future, try our T game';
+        T = ' You are a tech future, try our T game<br>';
     }
     if (counterE >= 1) {
         E = ' Engineering might be interesting for you, try our Circuit game';
