@@ -14,32 +14,31 @@ const questions = [
         option: {
             A: "yes, I do",
             B: "no"
-        },
-       answer: "yes,I do"
+        }
 	},
     {
         problem: "2) do you like to play puzzle games?",
         option: {
             A: "yes, I have one",
             B: "no"
-        },
-       answer: "yes, I have one"
+        }
+       
 	},
     {
         problem: "3) Can you count how many apples?",
         option: {
             A: "yes, there are 5 apples",
             B: "no"
-        },
-        answer: "yes, there are 5 apples"
+        }
+        
 	},
     {
         problem: "4) do you like building towers?",
         option: {
             A: "yes",
             B: "no"
-        },
-        answer: "yes"
+        }
+        
 	}
 ];
 
