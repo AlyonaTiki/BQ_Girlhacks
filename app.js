@@ -109,19 +109,15 @@ submitButton.onclick = function () {
 	
     if (counterS == 1) {
      	S = " You are interested in Science, try our S game<br />";
-	    resultsContainer.innerHTML = S + T + E + M;
     }  
     if (counterT == 1) {
         T = " You are a tech future, try our T game<br />";
-	    resultsContainer.innerHTML = S + T + E + M;
     }
     if (counterE == 1) {
         E = " Engineering might be interesting for you, try our Circuit game<br />";
-	    resultsContainer.innerHTML = S + T + E + M;
     }
     if (counterM == 1) {
         M = " You are math profi, try our M game<br />";
-	    resultsContainer.innerHTML = S + T + E + M;
     }
     resultsContainer.innerHTML = S + T + E + M;
 }
