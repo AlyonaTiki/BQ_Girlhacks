@@ -103,16 +103,22 @@ var resultsContainer = document.getElementById('results');
 
 // on submit, show results
 submitButton.onclick = function () {
+    var S = '';
+    var T = '';
+    var E = '';
+    var M = '';
+	
     if (counterS >= 1) {
-     	resultsContainer.innerHTML += ' You are interested in Science, try our S game';
-    }
+     	S = ' You are interested in Science, try our S game';
+    }  
     if (counterT >= 1) {
-        resultsContainer.innerHTML += ' You are a tech future, try our T game';
+        T = ' You are a tech future, try our T game';
     }
     if (counterE >= 1) {
-        resultsContainer.innerHTML += ' Engineering might be interesting for you, try our Circuit game';
+        E = ' Engineering might be interesting for you, try our Circuit game';
     }
     if (counterM >= 1) {
-        resultsContainer.innerHTML += ' You are math profi, try our M game';
+        M = ' You are math profi, try our M game';
     }
+    resultsContainer.innerHTML = S + T + E + M;
 }
